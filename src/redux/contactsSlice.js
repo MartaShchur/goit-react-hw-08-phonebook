@@ -2,9 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import {
   fetchContacts,
-  addContact,
-  deleteContact,
-  editContact,
+  addContacts,
+  deleteContacts,
+  editContacts,
 } from 'redux/operations';
 
 const initialState = {
@@ -31,43 +31,43 @@ const contactsSlice = createSlice({
         state.error = null;
         state.items = action.payload;
       })
-      .addCase(addContact.pending, state => {
+      .addCase(addContacts.pending, state => {
         state.isLoading = true;
       })
-      .addCase(addContact.rejected, (state, action) => {
+      .addCase(addContacts.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.error.message;
       })
-      .addCase(addContact.fulfilled, (state, action) => {
+      .addCase(addContacts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
         state.items.push(action.payload);
       })
-      .addCase(deleteContact.pending, state => {
+      .addCase(deleteContacts.pending, state => {
         state.isLoading = true;
       })
-      .addCase(deleteContact.rejected, (state, action) => {
+      .addCase(deleteContacts.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.error.message;
       })
-      .addCase(deleteContact.fulfilled, (state, action) => {
+      .addCase(deleteContacts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
         state.items = state.items.filter(item => item.id !== action.payload.id);
       })
-      .addCase(editContact.pending, state => {
+      .addCase(editContacts.pending, state => {
         state.isLoading = true;
       })
-      .addCase(editContact.rejected, (state, action) => {
+      .addCase(editContacts.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.error.message;
       })
-      .addCase(editContact.fulfilled, (state, action) => {
+      .addCase(editContacts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        const updatedContact = action.payload;
+        const updatedContacts = action.payload;
         state.items = state.items.map(item =>
-          item.id === updatedContact.id ? updatedContact : item
+          item.id === updatedContacts.id ? updatedContacts : item
         );
       });
   },

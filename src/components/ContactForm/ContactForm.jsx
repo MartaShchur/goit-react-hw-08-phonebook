@@ -42,26 +42,25 @@ export const ContactForm = () => {
       return;
     }
 
-
-    // const isNumberExist = contacts.find(
-    //   contact => contact.number.replace(/\D/g, '') === number.replace(/\D/g, '')
-    // );
-
-    // // console.log(isNumberExist);
-
-    // if (isNumberExist) {
-    //   Notiflix.Report.warning(
-    //     'Alert',
-    //     `Number ${number} is already in contacts!`,
-    //     'Ok'
-    //   );
-    //   return;
-    // }
-
-    dispatch(addContacts(name, phone));
+    dispatch(addContacts({name, phone}));
     setName('');
     setPhone('');
   };
+
+  // const handleChange = event => {
+  //   const { name, value } = event.target;
+
+  //   switch (name) {
+  //     case 'name':
+  //       setName(value);
+  //       break;
+  //     case 'number':
+  //       setPhone(value);
+  //       break;
+  //     default:
+  //       return;
+  //   }
+  // };
 
   const handleNameChange = event => {
     setName(event.target.value);
@@ -108,4 +107,3 @@ export const ContactForm = () => {
 }
 
 export default ContactForm;
-
