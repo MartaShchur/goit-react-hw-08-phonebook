@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.93050697.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.0d6ad436.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.c3ed653a.js",
     "static/js/748.3a7d4198.chunk.js": "/goit-react-hw-08-phonebook/static/js/748.3a7d4198.chunk.js",
-    "static/js/649.f3e15120.chunk.js": "/goit-react-hw-08-phonebook/static/js/649.f3e15120.chunk.js",
+    "static/js/649.90773d20.chunk.js": "/goit-react-hw-08-phonebook/static/js/649.90773d20.chunk.js",
     "static/js/628.7b9f9ecf.chunk.js": "/goit-react-hw-08-phonebook/static/js/628.7b9f9ecf.chunk.js",
     "static/js/732.1fc8c646.chunk.js": "/goit-react-hw-08-phonebook/static/js/732.1fc8c646.chunk.js",
     "static/js/907.a128d189.chunk.js": "/goit-react-hw-08-phonebook/static/js/907.a128d189.chunk.js",
@@ -11,9 +11,9 @@
     "static/js/865.491a8270.chunk.js": "/goit-react-hw-08-phonebook/static/js/865.491a8270.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.93050697.css.map": "/goit-react-hw-08-phonebook/static/css/main.93050697.css.map",
-    "main.0d6ad436.js.map": "/goit-react-hw-08-phonebook/static/js/main.0d6ad436.js.map",
+    "main.c3ed653a.js.map": "/goit-react-hw-08-phonebook/static/js/main.c3ed653a.js.map",
     "748.3a7d4198.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/748.3a7d4198.chunk.js.map",
-    "649.f3e15120.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/649.f3e15120.chunk.js.map",
+    "649.90773d20.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/649.90773d20.chunk.js.map",
     "628.7b9f9ecf.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/628.7b9f9ecf.chunk.js.map",
     "732.1fc8c646.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/732.1fc8c646.chunk.js.map",
     "907.a128d189.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/907.a128d189.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.93050697.css",
-    "static/js/main.0d6ad436.js"
+    "static/js/main.c3ed653a.js"
   ]
 }
