@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { logOut } from 'redux/auth/auth-operations';
-import { useAuth } from 'Hooks/useAuth';
+import { useAuth } from 'hooks/useAuth';
 import {
   LogOutBtn,
   UserAvatar,

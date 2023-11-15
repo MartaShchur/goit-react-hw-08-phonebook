@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 
-import { register } from 'redux/auth/operations';
+import { register } from 'redux/auth/auth-operations';
 
 import { Form, Input, Label, Button, LoggedLink } from './RegisterForm.styled';
 import { Notify } from 'notiflix';

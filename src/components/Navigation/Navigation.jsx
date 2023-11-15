@@ -1,4 +1,4 @@
-import { useAuth } from 'Hooks/useAuth';
+import { useAuth } from 'hooks/useAuth';
 import {
   Logo,
   MainNav,
