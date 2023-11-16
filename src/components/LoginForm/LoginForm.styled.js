@@ -40,11 +40,10 @@ export const Input = styled.input`
 export const Button = styled.button`
   font-weight: 600;
   font-size: 18px;
-
   margin-top: 24px;
   padding: 1.063em 1.5em;
 
-  background-color: #000000;
+  background-color: #648656;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(250, 187, 24, 0.1);

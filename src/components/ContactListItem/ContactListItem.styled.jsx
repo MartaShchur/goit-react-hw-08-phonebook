@@ -12,7 +12,7 @@ export const ContactName = styled.p`
   font-weight: 500;
 `;
 
-export const ContactPhone = styled.span`
+export const ContactNumber = styled.span`
   margin-right: 10px;
 `;
 

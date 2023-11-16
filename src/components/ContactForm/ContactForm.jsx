@@ -10,7 +10,7 @@ export const ContactForm = () => {
   const contacts = useSelector(selectContacts);
   // console.log(contacts);
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -34,17 +34,17 @@ export const ContactForm = () => {
     }
 
     const isNumberExist = contacts.find(
-       contact  => contact.phone.toLowerCase().trim() === phone.toLowerCase().trim()
+       contact  => contact.number.toLowerCase().trim() === number.toLowerCase().trim()
     );
 
     if (isNumberExist) {
-      alert(`${phone} is already in contacts`);
+      alert(`${number} is already in contacts`);
       return;
     }
 
-    dispatch(addContacts({name, phone}));
+    dispatch(addContacts({name, number}));
     setName('');
-    setPhone('');
+    setNumber('');
   };
 
   // const handleChange = event => {
@@ -67,7 +67,7 @@ export const ContactForm = () => {
   };
 
   const handlePhoneChange = event => {
-    setPhone(event.target.value);
+    setNumber(event.target.value);
   };
 
 
@@ -97,7 +97,7 @@ export const ContactForm = () => {
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
           placeholder="Enter number"
-           value={phone}
+           value={number}
         onChange={handlePhoneChange}
         />
       
